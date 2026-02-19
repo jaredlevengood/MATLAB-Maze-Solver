@@ -6,7 +6,7 @@ This project implements an autonomous navigation system in MATLAB that solves ra
 
 ## Demo
 
-![Maze Solver Video](https://github.com/jaredlevengood/Autonomous-Maze-Solver/raw/main/LeftHandSolution.mp4)
+https://github.com/user-attachments/assets/cec25561-f468-43f3-8c7d-758066342469
 
 --------------------------------------------
 
