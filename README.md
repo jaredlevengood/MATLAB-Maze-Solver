@@ -6,6 +6,15 @@ This project implements an autonomous navigation system in MATLAB that solves ra
 
 ## Project Structure
 
+* `MATLAB_Project_Maze.m`: The main navigation and optimization script.
+* `generate_maze.m`: The function to generate random maze structures.
+* `.gitignore`: Ignores autosave and large video files.
+* `LeftHandSolution.avi`: The exported video of the optimized solution (generated after running).
+
+--------------------------------------------
+
+## Project Structure
+
 MATLAB_Maze_Solver/
 │
 
@@ -27,23 +36,13 @@ MATLAB_Maze_Solver/
 * **Automated Video Generation**: Uses the `VideoWriter` class to automatically export the solved maze as an `.avi` file for external review.
 * **Live Visualization**: Provides a real-time graphical display of the robot's progress during the solving phase.
 
---------------------------------------------
+## What the Script Does
 
-## How It Works
-
-1. **Maze Generation**: The script calls `generate_maze()` to create a unique environment with guaranteed boundary walls.
-2. **Navigation**: The robot follows the left-hand wall. If a left turn is possible, it takes it; otherwise, it attempts to move forward, then right, or backward as a last resort.
-3. **Optimization**: Once the exit is reached, the script analyzes the `path_row` and `path_col` arrays to delete any steps spent in dead ends or circular paths.
-4. **Output**: The optimized path is rendered into a video titled `LeftHandSolution.avi`.
-
---------------------------------------------
-
-## Technical Implementation
-
-The project demonstrates several intermediate-to-advanced MATLAB concepts:
-* **Modular Arithmetic**: Used to manage the robot's "facing" direction without complex nested conditionals.
-* **Vectorized Coordinate Checks**: Ensures all moves are within the maze boundaries before execution to prevent runtime errors.
-* **Dynamic Array Manipulation**: Used during the backward iteration process to prune the navigation history.
+1. **Generates the Maze**: Calls `generate_maze.m` to create the grid.
+2. **Navigates (Left-Hand Rule)**: The robot continuously checks its immediate surroundings, prioritizing moves in this order: Left, Forward, Right, Backward (Dead End).
+3. **Records the Path**: Logs every coordinate visited during the raw traversal.
+4. **Optimizes the Route**: Performs a backward iteration through the coordinate history to identify and delete redundant loops.
+5. **Visualizes & Exports**: Generates a live plot of the robot's movement and exports the final, optimized path as a video.
 
 --------------------------------------------
 
@@ -57,19 +56,19 @@ The project demonstrates several intermediate-to-advanced MATLAB concepts:
 **Steps:**
 1. Open MATLAB
 2. Set Current Folder to this project directory
-3. Run: MATLAB_Project_Maze
+3. Run: `MATLAB_Project_Maze`
 4. View the live navigation in the figure window
-5. Find the exported LeftHandSolution.avi in the project folder
+5. Find the exported `LeftHandSolution.avi` in the project folder
 
 --------------------------------------------
 
 ## Skills Demonstrated
 
-- Algorithm Development: Implementation of the Left-Hand Rule and custom path pruning
-- MATLAB Programming: Proficiency with modular arithmetic, logic branching, and loops
-- Data Post-Processing: Cleaning raw navigation history to extract the most efficient route
-- Graphics & Visualization: Creating live plots and exporting media using VideoWriter
-- Boundary Handling: Implementing coordinate checks to prevent array index errors
+- **Algorithm Development**: Implementation of the Left-Hand Rule and custom path pruning.
+- **MATLAB Programming**: Proficiency with modular arithmetic, logic branching, and loops.
+- **Data Post-Processing**: Cleaning raw navigation history to extract the most efficient route.
+- **Graphics & Visualization**: Creating live plots and exporting media using `VideoWriter`.
+- **Boundary Handling**: Implementing coordinate checks to prevent array index errors.
 
 --------------------------------------------
 
