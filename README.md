@@ -2,6 +2,21 @@
 
 This repository contains a MATLAB-based autonomous navigation system that solves randomly generated mazes using the **Left-Hand Rule algorithm**. Beyond simple navigation, the system includes a post-processing stage to optimize the path and a visualization engine to export the solution as a video.
 
+# MATLAB Maze Solver: Left-Hand Rule & Path Optimization
+
+This project implements an autonomous navigation system in MATLAB that solves randomly generated mazes. It utilizes the Left-Hand Rule algorithm for navigation and features a custom post-processing algorithm to optimize the final path by removing redundant loops and dead-end traversals.
+
+--------------------------------------------
+
+## Project Structure
+
+```text
+MATLAB_Maze_Solver/
+│
+├── MATLAB_Project_Maze.m      (main navigation and optimization script)
+├── generate_maze.m            (function to generate random maze structures)
+├── .gitignore                 (ignores autosave and large video files)
+└── LeftHandSolution.avi       (exported video of the optimized solution)
 ## Key Features
 
 * **Left-Hand Rule Algorithm**: Implements a robust navigation strategy using modular arithmetic and direction vectors for efficient movement.
