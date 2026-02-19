@@ -9,7 +9,7 @@ This project implements an autonomous navigation system in MATLAB that solves ra
 * `Autonomous_Maze_Solver.m`: The main navigation and optimization script.
 * `generate_maze.m`: The function to generate random maze structures.
 * `.gitignore`: Ignores autosave and large video files.
-* `LeftHandSolution.avi`: The exported video of the optimized solution (generated after running).
+* `LeftHandSolution.mp4`: The exported video of the optimized solution (generated after running).
 
 --------------------------------------------
 
@@ -18,7 +18,7 @@ This project implements an autonomous navigation system in MATLAB that solves ra
 * **Dynamic Maze Generation**: Calls a custom function to generate a completely random maze layout on every run, including randomized entrance and exit points and guaranteed border walls.
 * **Left-Hand Rule Algorithm**: Implements a robust navigation strategy using modular arithmetic and direction vectors for efficient movement.
 * **Path Optimization**: Features a custom algorithm that iterates through the navigation history to identify and remove redundant loops or backtracking, resulting in the most efficient route from start to finish.
-* **Automated Video Generation**: Uses the `VideoWriter` class to automatically export the solved maze as an `.avi` file for external review.
+* **Automated Video Generation**: Uses the `VideoWriter` class to automatically export the solved maze as an `.mp4` file for external review.
 * **Live Visualization**: Provides a real-time graphical display of the robot's progress during the solving phase.
 
 --------------------------------------------
@@ -45,7 +45,7 @@ This project implements an autonomous navigation system in MATLAB that solves ra
 2. Set Current Folder to this project directory
 3. Run: `Autonomous_Maze_Solver.m`
 4. View the live navigation in the figure window
-5. Find the exported `LeftHandSolution.avi` in the project folder
+5. Find the exported `LeftHandSolution.mp4` in the project folder
 
 --------------------------------------------
 
