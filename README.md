@@ -6,7 +6,11 @@ This project implements an autonomous navigation system in MATLAB that solves ra
 
 ## Demo
 
-https://github.com/user-attachments/assets/cec25561-f468-43f3-8c7d-758066342469
+<div align="center">
+  <video src="https://github.com/user-attachments/assets/c44752be-055d-4057-8102-98ab30b74ffa" width="100%" controls autoplay muted playsinline loop>
+    Your browser does not support the video tag.
+  </video>
+</div>
 
 --------------------------------------------
 
