@@ -7,7 +7,7 @@ This project implements an autonomous navigation system in MATLAB that solves ra
 ## Demo
 
 <div align="center">
-  <video src="https://github.com/user-attachments/assets/c44752be-055d-4057-8102-98ab30b74ffa" width="100%" controls autoplay muted playsinline loop>
+  <video src="https://github.com/user-attachments/assets/a836976b-c168-4e78-846e-1a93ea7f9717" width="100%" controls autoplay muted playsinline loop>
     Your browser does not support the video tag.
   </video>
 </div>
