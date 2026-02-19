@@ -28,6 +28,7 @@ This project implements an autonomous navigation system in MATLAB that solves ra
 
 * **Dynamic Maze Generation**: Calls a custom function to generate a completely random maze layout on every run, including randomized entrance and exit points and guaranteed border walls.
 * **Left-Hand Rule Algorithm**: Implements a robust navigation strategy using modular arithmetic and direction vectors for efficient movement.
+* **Exit Override:** Real-time proximity check (Manhattan Distance == 1) that prioritizes the exit over wall-following to prevent overshooting the goal.
 * **Path Optimization**: Features a custom algorithm that iterates through the navigation history to identify and remove redundant loops or backtracking, resulting in the most efficient route from start to finish.
 * **Automated Video Generation**: Uses the `VideoWriter` class to automatically export the solved maze as an `.mp4` file for external review.
 * **Live Visualization**: Provides a real-time graphical display of the robot's progress during the solving phase.
