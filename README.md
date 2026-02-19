@@ -19,7 +19,6 @@ This project implements an autonomous navigation system in MATLAB that solves ra
 
 * `Autonomous_Maze_Solver.m`: The main navigation and optimization script.
 * `generate_maze.m`: The function to generate random maze structures.
-* `.gitignore`: Ignores autosave and large video files.
 * `LeftHandSolution.mp4`: The exported video of the optimized solution (generated after running).
 
 --------------------------------------------
