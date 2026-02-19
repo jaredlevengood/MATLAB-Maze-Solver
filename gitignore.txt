@@ -1,0 +1,17 @@
+# MATLAB autosave and backup files
+*.asv
+*.m~
+*.autosave
+*.bak
+
+# MATLAB figure files (we only track exported images like .png)
+*.fig
+
+# Code generation / cache folders
+codegen/
+coder/
+cache/
+
+# OS junk
+.DS_Store
+Thumbs.db
